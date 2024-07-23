@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="android-chrome-512x512.png">
+    <meta name="google-site-verification" content="vqq11CWNVkLVnZvjCeZReKc8-FRmgxek2SOWjr35CbY" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Binary Tree Subtree Analysis | Binary-Tree-Subtree-Analysis</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Binary Tree Subtree Analysis" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This repository contains a Python implementation for constructing a binary tree from a given input, analyzing the maximum subtree sum, and finding the path to the node with the maximum subtree sum. The implementation uses a divide-and-conquer approach to solve the problem efficiently." />
+<meta property="og:description" content="This repository contains a Python implementation for constructing a binary tree from a given input, analyzing the maximum subtree sum, and finding the path to the node with the maximum subtree sum. The implementation uses a divide-and-conquer approach to solve the problem efficiently." />
+<link rel="canonical" href="https://esmail-sarhadi.github.io/Binary-Tree-Subtree-Analysis/" />
+<meta property="og:url" content="https://esmail-sarhadi.github.io/Binary-Tree-Subtree-Analysis/" />
+<meta property="og:site_name" content="Binary-Tree-Subtree-Analysis" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Binary Tree Subtree Analysis" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"This repository contains a Python implementation for constructing a binary tree from a given input, analyzing the maximum subtree sum, and finding the path to the node with the maximum subtree sum. The implementation uses a divide-and-conquer approach to solve the problem efficiently.","headline":"Binary Tree Subtree Analysis","name":"Binary-Tree-Subtree-Analysis","url":"https://esmail-sarhadi.github.io/Binary-Tree-Subtree-Analysis/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/Binary-Tree-Subtree-Analysis/assets/css/style.css?v=992352ba00306f2d366144a9cf45e5c1aa4cbc80">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/Binary-Tree-Subtree-Analysis/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://esmail-sarhadi.github.io/Binary-Tree-Subtree-Analysis/">Binary-Tree-Subtree-Analysis</a></h1>
+      
+
+      
+<h1 id="binary-tree-subtree-analysis">Binary Tree Subtree Analysis</h1>
+
+<h2 id="overview">Overview</h2>
+<p>This repository contains a Python implementation for constructing a binary tree from a given input, analyzing the maximum subtree sum, and finding the path to the node with the maximum subtree sum. The implementation uses a divide-and-conquer approach to solve the problem efficiently.</p>
+
+<h2 id="features">Features</h2>
+<ul>
+  <li><strong>Tree Construction</strong>: Build a binary tree from a list of values, with <code class="language-plaintext highlighter-rouge">'*'</code> representing the root, <code class="language-plaintext highlighter-rouge">'+'</code> for internal nodes, and numerical values for leaf nodes.</li>
+  <li><strong>Subtree Analysis</strong>: Calculate the maximum sum of any subtree and identify the node contributing to this maximum sum.</li>
+  <li><strong>Path Finding</strong>: Trace the path from the node with the maximum subtree sum to the root of the tree.</li>
+</ul>
+
+<h2 id="code-explanation">Code Explanation</h2>
+<ul>
+  <li><strong>Node Class</strong>: Represents a node in the binary tree with attributes for value, parent, left child, and right child.</li>
+  <li><strong>create_tree Function</strong>: Constructs the binary tree from a list of values. The tree is built in reverse order to ensure correct placement of nodes.</li>
+  <li><strong>divide_and_conquer Function</strong>: Recursively calculates the maximum sum of subtrees and identifies the node with the maximum subtree sum.</li>
+  <li><strong>find_path_of_max_subtree Function</strong>: Traces the path from the node with the maximum subtree sum to the root, returning the path as a string.</li>
+  <li><strong>print_tree Function</strong>: Prints the structure of the tree for debugging and verification purposes.</li>
+</ul>
+
+<h2 id="usage">Usage</h2>
+<ol>
+  <li><strong>Clone the Repository:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/yourusername/binary-tree-subtree-analysis.git
+<span class="nb">cd </span>binary-tree-subtree-analysis
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Prepare Input File:</strong>
+Create an <code class="language-plaintext highlighter-rouge">input.txt</code> file in the repository directory. The file should contain a space-separated list of values where <code class="language-plaintext highlighter-rouge">'*'</code> denotes the root, <code class="language-plaintext highlighter-rouge">'+'</code> denotes internal nodes, and other values denote leaf nodes.</p>
+  </li>
+  <li><strong>Run the Script:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py
+</code></pre></div>    </div>
+  </li>
+  <li><strong>View Results:</strong>
+The script will output the maximum subtree sum and the path to the node with the maximum subtree sum.</li>
+</ol>
+
+<h2 id="example">Example</h2>
+<p><strong>Input File (<code class="language-plaintext highlighter-rouge">input.txt</code>):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* + 1 2 + 3 + 4 5
+</code></pre></div></div>
+
+<p><strong>Output:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Max Value =  12
+Max Node Path:  01* 
+</code></pre></div></div>
+
+<h2 id="contribution">Contribution</h2>
+<p>Feel free to open issues, submit pull requests, or suggest improvements. Your contributions are welcome!</p>
+
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License. See the <a href="/Binary-Tree-Subtree-Analysis/LICENSE">LICENSE</a> file for details.</p>
+      
+<h2 id="profile">Profile</h2>
+
+<p>Check out my GitHub profile: <a href="https://github.com/Esmail-sarhadi" target="_blank">Esmail Sarhadi</a></p>
+
+<h2 id="project-link">Project Link</h2>
+
+<p>View this project on GitHub: <a href="https://github.com/Esmail-sarhadi/Binary-Tree-Subtree-Analysis" target="_blank">Binary Tree Subtree Analysis</a></p>
+
+<h2 id="contact">Contact</h2>
+<p>For any questions or feedback, please contact <a href="mailto:sarhadiesmail@gmail.com">sarhadiesmail@gmail.com</a>.</p>
+
+<p><a href="https://nowpayments.io/donation?api_key=REWCYVC-A1AMFK3-QNRS663-PKJSBD2&amp;source=lk_donation&amp;medium=referral" target="_blank">
+     <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments" />
+</a></p>
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/Esmail-sarhadi/Binary-Tree-Subtree-Analysis/edit/main/README.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
